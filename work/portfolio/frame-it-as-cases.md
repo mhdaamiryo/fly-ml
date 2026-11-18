@@ -168,34 +168,7 @@ The project gives me practical experience building a multi-part React website an
 
 ---
 
-## 7. NMA Roots — Family Tree Project
-
-**Status:** In progress  
-**Focus:** React, interactive data visualisation, family information organisation
-
-### The problem
-
-Our family wanted a clearer way to organise and view family relationships for a family gathering. A long list of names is difficult to follow, especially when it includes several generations and branches.
-
-### What I did
-
-I started building NMA Roots, a family-tree application for the Naickanmavudiyil Makkar Aliyar family. The plan is to represent ancestors and their descendants in a visual tree, with room for details such as names, occupations, children, nicknames, and contact information.
-
-I chose React and XYFlow (@xyflow/react) to build an interactive node-based family tree. The project also uses Framer Motion, Lucide icons, Tailwind CSS, and Supabase as part of the application stack.
-
-I am keeping the first version focused on the family branch currently being organised, with the possibility of expanding it later.
-
-### What came of it
-
-I have a project structure and a chosen technical direction for turning family information into a visual, navigable tree. The application is still being developed, so I am not presenting it as a finished family database.
-
-**What I learned:** Real-world projects often begin with organising information and understanding how people will use it before building the interface.
-
-**Code:** [NMA Roots — GitHub](https://github.com/mhdaamiryo/nma-roots)
-
----
-
-## 8. Smart Cart Prototype
+## 7. Smart Cart Prototype
 
 **Status:** Prototype  
 **Focus:** Form-based workflow, product interaction, early prototyping
@@ -216,7 +189,7 @@ The prototype helped me practise turning an idea into an initial interactive flo
 
 ---
 
-## 9. Java Auction System
+## 8. Java Auction System
 
 **Status:** Academic project  
 **Focus:** Java, Swing, SQL, database-backed application
@@ -252,8 +225,8 @@ Right now, I am particularly interested in applied AI and machine learning, prac
 Have a project idea, an opportunity, or feedback on something I've built? I'd be happy to connect.
 
 - **GitHub:** [github.com/mhdaamiryo](https://github.com/mhdaamiryo)
-- **Email:** Add the email address you want to publish.
-- **LinkedIn:** Add your public LinkedIn profile URL.
+- **Email:** aamirny443@gmail.com
+- **LinkedIn:** https://www.linkedin.com/in/muhammed-aamir-5201a8280/
 
 **CTA:** [Explore my projects on GitHub](https://github.com/mhdaamiryo)
 
