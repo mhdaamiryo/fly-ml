@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-labelledby="title desc">
+  <title id="title">Muhammed Aamir monogram wordmark</title>
+  <desc id="desc">A muted blue geometric A monogram beside the name Muhammed Aamir.</desc>
+  <rect x="8" y="8" width="164" height="164" rx="30" fill="#315C8C"/>
+  <path d="M90 38 42 140h25l10-23h27l10 23h25L90 38Zm0 42 12 27H78l12-27Z" fill="#F7F8FA"/>
+  <text x="202" y="105" fill="#171A1F" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="650" letter-spacing="-1.5">Muhammed Aamir</text>
+  <text x="205" y="137" fill="#667085" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="500" letter-spacing="2.2">COMPUTER SCIENCE · AI · WEB</text>
+</svg>
