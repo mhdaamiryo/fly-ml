@@ -283,7 +283,7 @@ This was not a perfect straight-line improvement. The role-only prompt sounded m
 
 ### Claude
 
-**Test status:** Not yet run. I cannot access the user's Claude account from the GitHub connection, so I have not fabricated a Claude output or comparison.
+**Test status:** Not run. I cannot access a Claude session or the user's Claude account through the connected tools. I have not fabricated a Claude response or presented a ChatGPT-generated answer as Claude.
 
 **One required check to complete**
 Paste Version 5 into Claude (use the same prompt text and no extra conversation context), then record:
@@ -302,7 +302,7 @@ Paste Version 5 into Claude (use the same prompt text and no extra conversation 
 | Structure | Followed the seven requested sections | Pending live test |
 | Failure point | Relied on prompt context; did not inspect the dataset itself | Pending live test |
 
-Do not submit a claim that Claude was better or worse until the same Version 5 prompt has actually been run in Claude.
+Do not submit a claim that Claude was better or worse until the same Version 5 prompt has actually been run in Claude. This is the only part of the assignment that still needs an external model session; claiming otherwise would make the comparison unreliable.
 
 ---
 
@@ -371,3 +371,46 @@ Use only facts supplied in the context. Do not invent dataset details, model res
 - [x] Notes explain the observed output difference and remaining weakness
 - [x] Reusable final prompt template does not depend on my personal project context
 - [ ] Run Version 5 in Claude and complete the cross-model comparison table
+
+
+---
+
+## 8. Final prompt applied to my own task
+
+To make the reusable template concrete, I applied it to my FlyRank Content Refresh context. This is a final ChatGPT-generated application of the reusable prompt, not a separate Claude result.
+
+### Decision to support
+
+Help the content/SEO team decide which webpages to inspect first for a possible content refresh.
+
+### Task type and reason
+
+**Ranking.** The team needs an ordered review queue because it has limited time. A ranking is more useful than assigning every page a simple good/bad label.
+
+### Target or proxy
+
+The preferred target is an observed decline in search performance measured over a later time window. If only the starter dataset's rule-derived decline label is available, it must be treated as a proxy for current decline signals, not proof of future decline.
+
+### Unit of analysis
+
+One webpage per row.
+
+### Expected output
+
+A ranked list of webpages, ideally with a priority score and short reason codes that help explain why each page appears near the top.
+
+### Evaluation metric
+
+**Precision@50** is suitable if the team can review 50 pages at a time. It measures the proportion of the top 50 recommendations that are genuinely relevant for review. A target score can be agreed with the team, but it must not be reported as an achieved result until it is measured on a valid evaluation set.
+
+### Risks and limitations
+
+- A proxy label may not represent an actual future decline.
+- Features derived from the target can leak the answer into the model; target-derived columns must be excluded from model inputs.
+- A ranking score does not prove that a page is poor or that updating it will improve performance.
+- The dataset is anonymized and a snapshot; it cannot independently establish causation or predict Google's future ranking decisions.
+
+### Human decision
+
+The model can help sort the review queue. A content editor or SEO specialist must inspect the page, consider its purpose and context, and decide whether to refresh it.
+
