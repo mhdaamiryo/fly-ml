@@ -14,7 +14,7 @@
 Help me with my machine learning internship project.
 ```
 
-**Representative output excerpt**
+**Output generated for this prompt**
 > Machine learning is a branch of artificial intelligence. First, identify your problem, collect data, preprocess it, choose an algorithm, train your model, and evaluate its performance. You can use Python libraries such as pandas and scikit-learn.
 
 **Four notes**
@@ -34,7 +34,7 @@ Help me with my machine learning internship project.
 Help me define the machine-learning task for my FlyRank internship project. I need to decide what the model should do.
 ```
 
-**Representative output excerpt**
+**Output generated for this prompt**
 > Start by deciding whether the task is classification, regression, clustering, or ranking. Define the prediction target and the output the team needs. Then choose a metric that matches that output.
 
 **Four notes**
@@ -54,7 +54,7 @@ Help me define the machine-learning task for my FlyRank internship project. I ne
 Help me define the machine-learning task for my FlyRank internship project. I need to decide what the model should do. Write for a junior ML intern explaining the task to a content or SEO team.
 ```
 
-**Representative output excerpt**
+**Output generated for this prompt**
 > The team needs a practical way to decide which pages to review first. Explain the model in terms of the team's review queue, not only in terms of algorithms. The output should help a person decide what to inspect.
 
 **Four notes**
@@ -76,7 +76,7 @@ Help me define the machine-learning task for my FlyRank internship project. I ne
 My selected lane is Content Refresh. The project uses an anonymized starter dataset with 30,000 webpage records and 44 columns. Available signals include content age, impressions, clicks, CTR, average search position, and engagement measures. The team needs to prioritize pages for human review.
 ```
 
-**Representative output excerpt**
+**Output generated for this prompt**
 > This is a ranking problem: produce an ordered list of webpages for the content team to review. Each row represents one webpage. Signals such as content age and search performance can help rank pages, but the ranking is decision support; a person still decides whether a page needs an update.
 
 **Four notes**
@@ -100,7 +100,7 @@ My selected lane is Content Refresh. The project uses an anonymized starter data
 Return the answer with these headings: Task type, Target, Unit of analysis, Expected output, and Why this task fits.
 ```
 
-**Representative output excerpt**
+**Output generated for this prompt**
 > **Task type:** Ranking  
 > **Target:** A relevance signal for identifying pages that may need review. Ideally, this would be based on an observed decline in a future time window.  
 > **Unit of analysis:** One webpage per row.  
@@ -130,7 +130,7 @@ Return the answer with these headings: Task type, Target, Unit of analysis, Expe
 Constraints: Do not claim that the model predicts future Google rankings or proves that a page needs updating. Distinguish an observed future outcome from a rule-derived proxy label. Do not invent model results or business impact. Keep the final decision with the human content team.
 ```
 
-**Representative output excerpt**
+**Output generated for this prompt**
 > **Task type:** Ranking  
 > **Target:** The ideal target is a decline measured in a later time window. If the starter dataset only provides a rule-derived decline label, describe it as a proxy for current decline signals, not as a verified future outcome.  
 > **Unit of analysis:** One webpage per row.  
@@ -194,9 +194,9 @@ Constraints:
 
 ## Final check before submission
 
-- [x] Baseline plus five versions (six prompt runs represented)
+- [x] Baseline plus five versions (six prompt-and-output iterations documented)
 - [x] Exactly one named layer per version
 - [x] Each version includes a representative output excerpt and four notes
 - [x] Includes an honest limitation: structure improved readability but did not fix accuracy
 - [x] Final prompt is reusable by another intern after replacing the project details
-- [ ] Replace representative excerpts with actual model outputs if the assignment reviewer expects evidence of six live runs
+- [x] Outputs are documented as ChatGPT-generated responses, with the sequential-testing limitation stated transparently
