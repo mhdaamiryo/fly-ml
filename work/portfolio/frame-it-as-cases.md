@@ -27,6 +27,8 @@ I chose the Content Refresh lane in the FlyRank ML internship. I framed the prob
 
 I explored the anonymized starter dataset, which contains 30,000 pseudonymized content records and 44 columns. The available signals include content age, impressions, clicks, CTR, average search position, and engagement measures.
 
+For the Week 3 data-contract exercise, I worked with the gated warehouse's March 2026 daily performance data. I verified the source grain (no duplicate date-client-content keys), checked the month's coverage and GA4 availability, built five search-performance features, and ran a deliberate label-leakage experiment. The experiment showed 73.93% accuracy for a weak honest baseline and 100% when the label itself was incorrectly included as a feature; I then removed that leaked field. These are results from the executed notebook, not claimed production performance.
+
 I also considered how the target should be defined. The ideal target would be a decline observed in a future time window. The starter dataset is a snapshot, so its rule-derived decline label is only a proxy; it is not proof of future decline. This distinction matters when evaluating any model.
 
 For the first framing exercise, I selected **Precision@50** as the success metric. It asks how many of the top 50 recommended pages are relevant for review. An 80% score is a proposed target, not a result I have achieved.
@@ -42,82 +44,7 @@ I have a clearly framed ML problem, a defined unit of analysis (one webpage per 
 
 ---
 
-## 2. AAMIR.AI — Rule-Based Chatbot
-
-**Status:** Completed internship project  
-**Focus:** Python, control flow, conversational interaction
-
-### The problem
-
-I wanted to understand how a basic chatbot handles user messages and responds to different inputs. I started with a small, manageable project instead of trying to build a complex AI system immediately.
-
-### What I did
-
-As part of the DecodeLabs AI internship, I built AAMIR.AI, a rule-based chatbot in Python. I used predefined responses and control-flow logic to handle common messages and commands.
-
-I added greeting variations, a help command, jokes, date and time responses, case-insensitive input handling, a continuous chat loop, and chat-history saving. I kept the project focused on understanding how input, conditions, and program flow work together.
-
-### What came of it
-
-I completed a working command-line chatbot project and practised writing Python logic that responds to different user inputs. It is rule-based, not a large language model, and I describe it that way.
-
-**What I learned:** A useful interactive program can start with clear rules and good input handling. I also got more practice organising a small Python project and using GitHub.
-
-**Project:** [AAMIR.AI Chatbot — GitHub](https://github.com/mhdaamiryo/Task-1-MuhammedAamir)
-
----
-
-## 3. Iris Flower Classification
-
-**Status:** Completed internship project  
-**Focus:** Supervised machine learning, classification, scikit-learn
-
-### The problem
-
-I wanted to practise a complete beginner machine-learning workflow: take labelled data, train a model, and use it to predict a category for new measurements.
-
-### What I did
-
-For the DecodeLabs AI internship, I used the Iris dataset, which contains measurements such as sepal length, sepal width, petal length, and petal width. I split the data into training and testing sets, trained a K-Nearest Neighbors (KNN) classifier using scikit-learn, and used it to predict one of the three flower species.
-
-I also explored the model's accuracy and sample predictions. I did not include a specific accuracy figure here because I would want to verify the exact run and evaluation setup before publishing a number.
-
-### What came of it
-
-I completed a small classification project and gained practical experience with the basic supervised-learning workflow: loading data, splitting it, fitting a model, predicting, and evaluating.
-
-**What I learned:** The model's prediction is only one part of the work. The way data is split and the way performance is measured are also important.
-
-**Project:** [Iris Classification — GitHub](https://github.com/mhdaamiryo/Task-2-MuhammedAamir)
-
----
-
-## 4. Course Recommendation System
-
-**Status:** Completed internship project  
-**Focus:** Content-based recommendation, text features, similarity
-
-### The problem
-
-A learner may know the topics they are interested in but not which courses match those interests. I wanted to build a simple system that could compare a user's interests with course descriptions and return relevant suggestions.
-
-### What I did
-
-I built a small course recommendation system as part of the DecodeLabs AI internship. The user enters interests, such as Python or AI. The system converts text into numerical features using CountVectorizer and compares the interests with course content using cosine similarity.
-
-I used the similarity scores to rank and return matching courses. This is a content-based approach: recommendations are based on the text and topics associated with the items, not on a history of other users' behaviour.
-
-### What came of it
-
-I completed an interactive recommendation project that accepts user interests and returns ranked course suggestions. I did not measure recommendation quality with a user study, so I do not claim that the suggestions are proven to be useful for real learners.
-
-**What I learned:** Text can be represented as numerical features, and similarity can be used to build a simple recommendation workflow.
-
-**Project:** [Course Recommendation System — GitHub](https://github.com/mhdaamiryo/Task-3-MuhammedAamir)
-
----
-
-## 5. Two Good Co — Frontend Website Clone
+## 2. Two Good Co — Frontend Website Clone
 
 **Status:** Completed practice project  
 **Focus:** HTML, CSS, JavaScript, GSAP, responsive frontend
@@ -143,7 +70,7 @@ I published the clone on Vercel, giving me a complete project I could open and r
 
 ---
 
-## 6. SchoolPage — Sri Sai Inter College Website
+## 3. SchoolPage — Sri Sai Inter College Website
 
 **Status:** In progress / project build  
 **Focus:** React, Vite, Tailwind CSS, Framer Motion, EmailJS
@@ -168,7 +95,7 @@ The project gives me practical experience building a multi-part React website an
 
 ---
 
-## 7. Smart Cart Prototype
+## 4. Smart Cart Prototype
 
 **Status:** Prototype  
 **Focus:** Form-based workflow, product interaction, early prototyping
@@ -189,7 +116,7 @@ The prototype helped me practise turning an idea into an initial interactive flo
 
 ---
 
-## 8. Java Auction System
+## 5. Java Auction System
 
 **Status:** Academic project  
 **Focus:** Java, Swing, SQL, database-backed application
