@@ -1,5 +1,110 @@
 {
-  "execution_required": true,
-  "message": "Run work/notebooks/capstone.ipynb with the gated warehouse access to generate real aggregate metrics.",
-  "metrics": []
+  "execution_required": false,
+  "lane": "CTR / Engagement Opportunity Scoring",
+  "release": "flyrank_pseudonymized_warehouse_release_v20260703",
+  "feature_window": [
+    "2026-03-02",
+    "2026-04-30"
+  ],
+  "outcome_window": [
+    "2026-05-01",
+    "2026-05-31"
+  ],
+  "eligible_rows": 77395,
+  "train_rows": 71399,
+  "test_rows": 5996,
+  "train_clients": 31,
+  "test_clients": 11,
+  "test_positive_rate": 0.42228152101400934,
+  "selected_model": "logistic_regression",
+  "metrics": [
+    {
+      "method": "position_adjusted_baseline",
+      "average_precision": 0.5830567702703799,
+      "roc_auc": 0.6784205472492512,
+      "precision_at_50": 0.82,
+      "recall_at_0_5": 0.4253554502369668,
+      "f1_at_0_5": 0.532377656945131
+    },
+    {
+      "method": "logistic_regression",
+      "average_precision": 0.6921108634054535,
+      "roc_auc": 0.7922088035273215,
+      "precision_at_50": 0.8,
+      "recall_at_0_5": 0.7330173775671406,
+      "f1_at_0_5": 0.6881720430107527
+    },
+    {
+      "method": "random_forest",
+      "average_precision": 0.7296757538911517,
+      "roc_auc": 0.8059951557705709,
+      "precision_at_50": 0.98,
+      "recall_at_0_5": 0.7397314375987362,
+      "f1_at_0_5": 0.6931902294596595
+    }
+  ],
+  "position_band_summary": [
+    {
+      "band": "1-3",
+      "n": 245,
+      "median_future_ctr": 0.5347593582887701
+    },
+    {
+      "band": "4-10",
+      "n": 4037,
+      "median_future_ctr": 0.2958579881656805
+    },
+    {
+      "band": "11-20",
+      "n": 1158,
+      "median_future_ctr": 0.11507495100376079
+    },
+    {
+      "band": "21-50",
+      "n": 534,
+      "median_future_ctr": 0
+    },
+    {
+      "band": "50+",
+      "n": 22,
+      "median_future_ctr": 0
+    }
+  ],
+  "top_features": [
+    {
+      "feature": "prior_ctr_pct",
+      "importance": 0.06618315174318834
+    },
+    {
+      "feature": "prior_clicks",
+      "importance": 0.05749175860359945
+    },
+    {
+      "feature": "prior_impressions",
+      "importance": 0.03458531838750365
+    },
+    {
+      "feature": "recent_ctr_pct",
+      "importance": 0.023640227839777796
+    },
+    {
+      "feature": "prior_days_with_impressions",
+      "importance": 0.006937072727176674
+    },
+    {
+      "feature": "older_ctr_pct",
+      "importance": 0.0009693417556032146
+    },
+    {
+      "feature": "prior_position_sd",
+      "importance": 0.0003439968357399792
+    },
+    {
+      "feature": "prior_avg_position",
+      "importance": -0.0002602773737476971
+    }
+  ],
+  "queue_rows": 77395,
+  "top50_action_count": 50,
+  "seed": 42
 }
